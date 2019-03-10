@@ -1,0 +1,40 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.gc-progress {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .circle {
+    margin-left: 25vw;
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+  }
+}
+
+.progressbar-text {
+  font-size: 10vw;
+  position: absolute;
+}

@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-camera {
+  position: relative;
+  width: 30%;
+  height: 100%;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.button-photo {
+  @extend .button-camera;
+  background: url("../../../assets/images/camera/button-photo.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.button-video {
+  display: none;
+  @extend .button-camera;
+
+
+  &.off {
+    background: url("../../../assets/images/camera/button-video-off.png") no-repeat;
+    background-size: contain;
+  }
+
+  &.on {
+    background: url("../../../assets/images/camera/button-video-on.png") no-repeat;
+    background-size: contain;
+  }
+}
